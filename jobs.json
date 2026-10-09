@@ -1,0 +1,999 @@
+{
+ "schema": "hong-fill-jobs-repo/1",
+ "canvas4k": [
+  3072,
+  4096
+ ],
+ "source": "refs/hong_4K.png",
+ "background": [
+  128,
+  128,
+  128
+ ],
+ "markColor": [
+  0,
+  255,
+  0
+ ],
+ "jobs": [
+  {
+   "id": "J01",
+   "name": "FaceSkin",
+   "cn": "脸底层皮肤",
+   "priority": "P1",
+   "fills": [
+    "F01"
+   ],
+   "folder": "jobs/J01_FaceSkin",
+   "prompt": "jobs/J01_FaceSkin/prompt.md",
+   "files": {
+    "input": "jobs/J01_FaceSkin/input.png",
+    "inputMarked": "jobs/J01_FaceSkin/input_marked.png",
+    "mask": "jobs/J01_FaceSkin/mask.png",
+    "maskBW": "jobs/J01_FaceSkin/mask_bw.png",
+    "context": "jobs/J01_FaceSkin/context.png",
+    "preview": "jobs/J01_FaceSkin/preview.png"
+   },
+   "refs": [
+    "refs/hong_4K.png"
+   ],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J01.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "FaceSkin": [
+     "F01_FaceSkin"
+    ]
+   },
+   "crop4k": [
+    1202,
+    354,
+    1853,
+    1005
+   ],
+   "scale4kToImage": 1.5729646697388633
+  },
+  {
+   "id": "J02",
+   "name": "EyeWhites",
+   "cn": "眼白",
+   "priority": "P1",
+   "fills": [
+    "F02"
+   ],
+   "folder": "jobs/J02_EyeWhites",
+   "prompt": "jobs/J02_EyeWhites/prompt.md",
+   "files": {
+    "input": "jobs/J02_EyeWhites/input.png",
+    "inputMarked": "jobs/J02_EyeWhites/input_marked.png",
+    "mask": "jobs/J02_EyeWhites/mask.png",
+    "maskBW": "jobs/J02_EyeWhites/mask_bw.png",
+    "context": "jobs/J02_EyeWhites/context.png",
+    "preview": "jobs/J02_EyeWhites/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J02.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "EyeWhiteR": [
+     "F02_EyeWhiteR"
+    ],
+    "EyeWhiteL": [
+     "F02_EyeWhiteL"
+    ]
+   },
+   "crop4k": [
+    1245,
+    565,
+    1811,
+    942
+   ],
+   "scale4kToImage": 2.7137809187279154
+  },
+  {
+   "id": "J03",
+   "name": "Irises",
+   "cn": "虹膜",
+   "priority": "P1",
+   "fills": [
+    "F03"
+   ],
+   "folder": "jobs/J03_Irises",
+   "prompt": "jobs/J03_Irises/prompt.md",
+   "files": {
+    "input": "jobs/J03_Irises/input.png",
+    "inputMarked": "jobs/J03_Irises/input_marked.png",
+    "mask": "jobs/J03_Irises/mask.png",
+    "maskBW": "jobs/J03_Irises/mask_bw.png",
+    "context": "jobs/J03_Irises/context.png",
+    "preview": "jobs/J03_Irises/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J03.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "IrisR": [
+     "F03_IrisR"
+    ],
+    "IrisL": [
+     "F03_IrisL"
+    ]
+   },
+   "crop4k": [
+    1245,
+    565,
+    1811,
+    942
+   ],
+   "scale4kToImage": 2.7137809187279154
+  },
+  {
+   "id": "J04",
+   "name": "ClosedEyes",
+   "cn": "闭眼",
+   "priority": "P1",
+   "fills": [
+    "F04",
+    "F23"
+   ],
+   "folder": "jobs/J04_ClosedEyes",
+   "prompt": "jobs/J04_ClosedEyes/prompt.md",
+   "files": {
+    "input": "jobs/J04_ClosedEyes/input.png",
+    "inputMarked": "jobs/J04_ClosedEyes/input_marked.png",
+    "mask": "jobs/J04_ClosedEyes/mask.png",
+    "maskBW": "jobs/J04_ClosedEyes/mask_bw.png",
+    "context": "jobs/J04_ClosedEyes/context.png",
+    "preview": "jobs/J04_ClosedEyes/preview.png"
+   },
+   "refs": [
+    "refs/game_eyes_half_closed.jpg"
+   ],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [
+    "a",
+    "b"
+   ],
+   "returns": [
+    "returns/J04_a.png",
+    "returns/J04_b.png"
+   ],
+   "inContext": true,
+   "newLayers": [
+    "LashClosedR",
+    "LashClosedL",
+    "LashLowerR (可选)",
+    "LashLowerL (可选)"
+   ],
+   "targets": {},
+   "crop4k": [
+    1245,
+    565,
+    1811,
+    942
+   ],
+   "scale4kToImage": 2.7137809187279154
+  },
+  {
+   "id": "J05",
+   "name": "Brows",
+   "cn": "眉毛",
+   "priority": "P1",
+   "fills": [
+    "F05"
+   ],
+   "folder": "jobs/J05_Brows",
+   "prompt": "jobs/J05_Brows/prompt.md",
+   "files": {
+    "input": "jobs/J05_Brows/input.png",
+    "inputMarked": "jobs/J05_Brows/input_marked.png",
+    "mask": "jobs/J05_Brows/mask.png",
+    "maskBW": "jobs/J05_Brows/mask_bw.png",
+    "context": "jobs/J05_Brows/context.png",
+    "preview": "jobs/J05_Brows/preview.png"
+   },
+   "refs": [
+    "refs/design_sheet.png"
+   ],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J05.png"
+   ],
+   "inContext": true,
+   "newLayers": [
+    "BrowR",
+    "BrowL"
+   ],
+   "targets": {},
+   "crop4k": [
+    1202,
+    354,
+    1853,
+    1005
+   ],
+   "scale4kToImage": 1.5729646697388633
+  },
+  {
+   "id": "J06",
+   "name": "MouthOpen",
+   "cn": "张嘴口型",
+   "priority": "P1",
+   "fills": [
+    "F06"
+   ],
+   "folder": "jobs/J06_MouthOpen",
+   "prompt": "jobs/J06_MouthOpen/prompt.md",
+   "files": {
+    "input": "jobs/J06_MouthOpen/input.png",
+    "inputMarked": "jobs/J06_MouthOpen/input_marked.png",
+    "mask": "jobs/J06_MouthOpen/mask.png",
+    "maskBW": "jobs/J06_MouthOpen/mask_bw.png",
+    "context": "jobs/J06_MouthOpen/context.png",
+    "preview": "jobs/J06_MouthOpen/preview.png"
+   },
+   "refs": [
+    "refs/game_mouth_talking.jpg"
+   ],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [
+    "a",
+    "b"
+   ],
+   "returns": [
+    "returns/J06_a.png",
+    "returns/J06_b.png"
+   ],
+   "inContext": true,
+   "newLayers": [
+    "MouthInner",
+    "MouthUpper",
+    "MouthLower",
+    "Teeth",
+    "Tongue"
+   ],
+   "targets": {},
+   "crop4k": [
+    1202,
+    354,
+    1853,
+    1005
+   ],
+   "scale4kToImage": 1.5729646697388633
+  },
+  {
+   "id": "J07",
+   "name": "Neck",
+   "cn": "颈部",
+   "priority": "P1",
+   "fills": [
+    "F07"
+   ],
+   "folder": "jobs/J07_Neck",
+   "prompt": "jobs/J07_Neck/prompt.md",
+   "files": {
+    "input": "jobs/J07_Neck/input.png",
+    "inputMarked": "jobs/J07_Neck/input_marked.png",
+    "mask": "jobs/J07_Neck/mask.png",
+    "maskBW": "jobs/J07_Neck/mask_bw.png",
+    "context": "jobs/J07_Neck/context.png",
+    "preview": "jobs/J07_Neck/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J07.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "Neck": [
+     "F07_Neck"
+    ]
+   },
+   "crop4k": [
+    1330,
+    849,
+    1726,
+    1245
+   ],
+   "scale4kToImage": 2.585858585858586
+  },
+  {
+   "id": "J08",
+   "name": "BackHair",
+   "cn": "后脑头发",
+   "priority": "P1",
+   "fills": [
+    "F09",
+    "F12"
+   ],
+   "folder": "jobs/J08_BackHair",
+   "prompt": "jobs/J08_BackHair/prompt.md",
+   "files": {
+    "input": "jobs/J08_BackHair/input.png",
+    "inputMarked": "jobs/J08_BackHair/input_marked.png",
+    "mask": "jobs/J08_BackHair/mask.png",
+    "maskBW": "jobs/J08_BackHair/mask_bw.png",
+    "context": "jobs/J08_BackHair/context.png",
+    "preview": "jobs/J08_BackHair/preview.png"
+   },
+   "refs": [
+    "refs/design_sheet.png",
+    "refs/three_views.png"
+   ],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J08.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "HairBack": [
+     "F09_HairBack",
+     "F12_HairBack"
+    ]
+   },
+   "crop4k": [
+    1018,
+    113,
+    2036,
+    1131
+   ],
+   "scale4kToImage": 1.005893909626719
+  },
+  {
+   "id": "J09",
+   "name": "ShouldersUpperArms",
+   "cn": "肩胸与上臂",
+   "priority": "P2",
+   "fills": [
+    "F08",
+    "F13"
+   ],
+   "folder": "jobs/J09_ShouldersUpperArms",
+   "prompt": "jobs/J09_ShouldersUpperArms/prompt.md",
+   "files": {
+    "input": "jobs/J09_ShouldersUpperArms/input.png",
+    "inputMarked": "jobs/J09_ShouldersUpperArms/input_marked.png",
+    "mask": "jobs/J09_ShouldersUpperArms/mask.png",
+    "maskBW": "jobs/J09_ShouldersUpperArms/mask_bw.png",
+    "context": "jobs/J09_ShouldersUpperArms/context.png",
+    "preview": "jobs/J09_ShouldersUpperArms/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J09.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "TorsoSkin": [
+     "F08_TorsoSkin"
+    ],
+    "UpperArmR": [
+     "F13_UpperArmR"
+    ],
+    "UpperArmL": [
+     "F13_UpperArmL"
+    ]
+   },
+   "crop4k": [
+    1046,
+    933,
+    2009,
+    1575
+   ],
+   "scale4kToImage": 1.5950155763239875
+  },
+  {
+   "id": "J10R",
+   "name": "WristR",
+   "cn": "右手腕（画面左）",
+   "priority": "P2",
+   "fills": [
+    "F14"
+   ],
+   "folder": "jobs/J10R_WristR",
+   "prompt": "jobs/J10R_WristR/prompt.md",
+   "files": {
+    "input": "jobs/J10R_WristR/input.png",
+    "inputMarked": "jobs/J10R_WristR/input_marked.png",
+    "mask": "jobs/J10R_WristR/mask.png",
+    "maskBW": "jobs/J10R_WristR/mask_bw.png",
+    "context": "jobs/J10R_WristR/context.png",
+    "preview": "jobs/J10R_WristR/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J10R.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "ForearmR": [
+     "F14_ForearmR"
+    ],
+    "HandR": [
+     "F14_HandR"
+    ]
+   },
+   "crop4k": [
+    665,
+    1669,
+    976,
+    2136
+   ],
+   "scale4kToImage": 3.292604501607717
+  },
+  {
+   "id": "J10L",
+   "name": "WristL",
+   "cn": "左手腕（画面右）",
+   "priority": "P2",
+   "fills": [
+    "F14"
+   ],
+   "folder": "jobs/J10L_WristL",
+   "prompt": "jobs/J10L_WristL/prompt.md",
+   "files": {
+    "input": "jobs/J10L_WristL/input.png",
+    "inputMarked": "jobs/J10L_WristL/input_marked.png",
+    "mask": "jobs/J10L_WristL/mask.png",
+    "maskBW": "jobs/J10L_WristL/mask_bw.png",
+    "context": "jobs/J10L_WristL/context.png",
+    "preview": "jobs/J10L_WristL/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J10L.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "ForearmL": [
+     "F14_ForearmL"
+    ],
+    "HandL": [
+     "F14_HandL"
+    ]
+   },
+   "crop4k": [
+    2079,
+    1669,
+    2390,
+    2136
+   ],
+   "scale4kToImage": 3.292604501607717
+  },
+  {
+   "id": "J11",
+   "name": "HairUnderAccessories",
+   "cn": "发饰下的头发",
+   "priority": "P2",
+   "fills": [
+    "F12"
+   ],
+   "folder": "jobs/J11_HairUnderAccessories",
+   "prompt": "jobs/J11_HairUnderAccessories/prompt.md",
+   "files": {
+    "input": "jobs/J11_HairUnderAccessories/input.png",
+    "inputMarked": "jobs/J11_HairUnderAccessories/input_marked.png",
+    "mask": "jobs/J11_HairUnderAccessories/mask.png",
+    "maskBW": "jobs/J11_HairUnderAccessories/mask_bw.png",
+    "context": "jobs/J11_HairUnderAccessories/context.png",
+    "preview": "jobs/J11_HairUnderAccessories/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J11.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "FringeR": [
+     "F12_FringeR"
+    ],
+    "FringeC": [
+     "F12_FringeC"
+    ],
+    "FringeL": [
+     "F12_FringeL"
+    ],
+    "SideLockL": [
+     "F12_SideLockL"
+    ]
+   },
+   "crop4k": [
+    933,
+    0,
+    2093,
+    773
+   ],
+   "scale4kToImage": 1.3241379310344827
+  },
+  {
+   "id": "J12",
+   "name": "UpperThighs",
+   "cn": "大腿上段",
+   "priority": "P2",
+   "fills": [
+    "F16"
+   ],
+   "folder": "jobs/J12_UpperThighs",
+   "prompt": "jobs/J12_UpperThighs/prompt.md",
+   "files": {
+    "input": "jobs/J12_UpperThighs/input.png",
+    "inputMarked": "jobs/J12_UpperThighs/input_marked.png",
+    "mask": "jobs/J12_UpperThighs/mask.png",
+    "maskBW": "jobs/J12_UpperThighs/mask_bw.png",
+    "context": "jobs/J12_UpperThighs/context.png",
+    "preview": "jobs/J12_UpperThighs/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J12.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "ThighR": [
+     "F16_ThighR"
+    ],
+    "ThighL": [
+     "F16_ThighL"
+    ]
+   },
+   "crop4k": [
+    1131,
+    2150,
+    1924,
+    2679
+   ],
+   "scale4kToImage": 1.9369482976040353
+  },
+  {
+   "id": "J13R",
+   "name": "TrainR",
+   "cn": "右拖尾（画面左）",
+   "priority": "P2",
+   "fills": [
+    "F19",
+    "F20",
+    "F21"
+   ],
+   "folder": "jobs/J13R_TrainR",
+   "prompt": "jobs/J13R_TrainR/prompt.md",
+   "files": {
+    "input": "jobs/J13R_TrainR/input.png",
+    "inputMarked": "jobs/J13R_TrainR/input_marked.png",
+    "mask": "jobs/J13R_TrainR/mask.png",
+    "maskBW": "jobs/J13R_TrainR/mask_bw.png",
+    "context": "jobs/J13R_TrainR/context.png",
+    "preview": "jobs/J13R_TrainR/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J13R.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "TrainR": [
+     "F19_TrainR",
+     "F20_TrainR",
+     "F21_TrainR"
+    ]
+   },
+   "crop4k": [
+    212,
+    2150,
+    1400,
+    3932
+   ],
+   "scale4kToImage": 0.8619528619528619
+  },
+  {
+   "id": "J13L",
+   "name": "TrainL",
+   "cn": "左拖尾（画面右）",
+   "priority": "P2",
+   "fills": [
+    "F19",
+    "F20",
+    "F21"
+   ],
+   "folder": "jobs/J13L_TrainL",
+   "prompt": "jobs/J13L_TrainL/prompt.md",
+   "files": {
+    "input": "jobs/J13L_TrainL/input.png",
+    "inputMarked": "jobs/J13L_TrainL/input_marked.png",
+    "mask": "jobs/J13L_TrainL/mask.png",
+    "maskBW": "jobs/J13L_TrainL/mask_bw.png",
+    "context": "jobs/J13L_TrainL/context.png",
+    "preview": "jobs/J13L_TrainL/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J13L.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "TrainL": [
+     "F19_TrainL",
+     "F20_TrainL",
+     "F21_TrainL"
+    ]
+   },
+   "crop4k": [
+    1669,
+    2150,
+    2857,
+    3932
+   ],
+   "scale4kToImage": 0.8619528619528619
+  },
+  {
+   "id": "J14R",
+   "name": "LongHairR",
+   "cn": "右侧长发（画面左）",
+   "priority": "P2",
+   "fills": [
+    "F10"
+   ],
+   "folder": "jobs/J14R_LongHairR",
+   "prompt": "jobs/J14R_LongHairR/prompt.md",
+   "files": {
+    "input": "jobs/J14R_LongHairR/input.png",
+    "inputMarked": "jobs/J14R_LongHairR/input_marked.png",
+    "mask": "jobs/J14R_LongHairR/mask.png",
+    "maskBW": "jobs/J14R_LongHairR/mask_bw.png",
+    "context": "jobs/J14R_LongHairR/context.png",
+    "preview": "jobs/J14R_LongHairR/preview.png"
+   },
+   "refs": [
+    "refs/three_views.png"
+   ],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J14R.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "HairLongR": [
+     "F10_HairLongR"
+    ]
+   },
+   "crop4k": [
+    0,
+    444,
+    1607,
+    2854
+   ],
+   "scale4kToImage": 0.6372121966397013
+  },
+  {
+   "id": "J14L",
+   "name": "LongHairL",
+   "cn": "左侧长发（画面右）",
+   "priority": "P2",
+   "fills": [
+    "F11"
+   ],
+   "folder": "jobs/J14L_LongHairL",
+   "prompt": "jobs/J14L_LongHairL/prompt.md",
+   "files": {
+    "input": "jobs/J14L_LongHairL/input.png",
+    "inputMarked": "jobs/J14L_LongHairL/input_marked.png",
+    "mask": "jobs/J14L_LongHairL/mask.png",
+    "maskBW": "jobs/J14L_LongHairL/mask_bw.png",
+    "context": "jobs/J14L_LongHairL/context.png",
+    "preview": "jobs/J14L_LongHairL/preview.png"
+   },
+   "refs": [
+    "refs/three_views.png"
+   ],
+   "size": [
+    1024,
+    1536
+   ],
+   "aspect": "2:3",
+   "variants": [],
+   "returns": [
+    "returns/J14L.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "HairLongL": [
+     "F11_HairLongL"
+    ]
+   },
+   "crop4k": [
+    1465,
+    453,
+    3072,
+    2863
+   ],
+   "scale4kToImage": 0.6372121966397013
+  },
+  {
+   "id": "J15",
+   "name": "DressUnderBows",
+   "cn": "红带和腰结下的衣身",
+   "priority": "P3",
+   "fills": [
+    "F15"
+   ],
+   "folder": "jobs/J15_DressUnderBows",
+   "prompt": "jobs/J15_DressUnderBows/prompt.md",
+   "files": {
+    "input": "jobs/J15_DressUnderBows/input.png",
+    "inputMarked": "jobs/J15_DressUnderBows/input_marked.png",
+    "mask": "jobs/J15_DressUnderBows/mask.png",
+    "maskBW": "jobs/J15_DressUnderBows/mask_bw.png",
+    "context": "jobs/J15_DressUnderBows/context.png",
+    "preview": "jobs/J15_DressUnderBows/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J15.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "Bodice": [
+     "F15_Bodice"
+    ],
+    "Skirt": [
+     "F15_Skirt"
+    ],
+    "CollarRuffle": [
+     "F15_CollarRuffle"
+    ]
+   },
+   "crop4k": [
+    1131,
+    1103,
+    1923,
+    1895
+   ],
+   "scale4kToImage": 1.292929292929293
+  },
+  {
+   "id": "J16",
+   "name": "BloomersTop",
+   "cn": "灯笼裤上部",
+   "priority": "P3",
+   "fills": [
+    "F18"
+   ],
+   "folder": "jobs/J16_BloomersTop",
+   "prompt": "jobs/J16_BloomersTop/prompt.md",
+   "files": {
+    "input": "jobs/J16_BloomersTop/input.png",
+    "inputMarked": "jobs/J16_BloomersTop/input_marked.png",
+    "mask": "jobs/J16_BloomersTop/mask.png",
+    "maskBW": "jobs/J16_BloomersTop/mask_bw.png",
+    "context": "jobs/J16_BloomersTop/context.png",
+    "preview": "jobs/J16_BloomersTop/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J16.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "Bloomers": [
+     "F18_Bloomers"
+    ]
+   },
+   "crop4k": [
+    1146,
+    2014,
+    1910,
+    2523
+   ],
+   "scale4kToImage": 2.0104712041884816
+  },
+  {
+   "id": "J17",
+   "name": "KneeUnderBandage",
+   "cn": "左膝盖",
+   "priority": "P3",
+   "fills": [
+    "F17"
+   ],
+   "folder": "jobs/J17_KneeUnderBandage",
+   "prompt": "jobs/J17_KneeUnderBandage/prompt.md",
+   "files": {
+    "input": "jobs/J17_KneeUnderBandage/input.png",
+    "inputMarked": "jobs/J17_KneeUnderBandage/input_marked.png",
+    "mask": "jobs/J17_KneeUnderBandage/mask.png",
+    "maskBW": "jobs/J17_KneeUnderBandage/mask_bw.png",
+    "context": "jobs/J17_KneeUnderBandage/context.png",
+    "preview": "jobs/J17_KneeUnderBandage/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1024,
+    1024
+   ],
+   "aspect": "1:1",
+   "variants": [],
+   "returns": [
+    "returns/J17.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "ThighL": [
+     "F17_ThighL"
+    ],
+    "ShinL": [
+     "F17_ShinL"
+    ]
+   },
+   "crop4k": [
+    1542,
+    2631,
+    1825,
+    2914
+   ],
+   "scale4kToImage": 3.618374558303887
+  },
+  {
+   "id": "J18",
+   "name": "WingRUnderHalo",
+   "cn": "右翼饰（画面左）",
+   "priority": "P3",
+   "fills": [
+    "F22"
+   ],
+   "folder": "jobs/J18_WingRUnderHalo",
+   "prompt": "jobs/J18_WingRUnderHalo/prompt.md",
+   "files": {
+    "input": "jobs/J18_WingRUnderHalo/input.png",
+    "inputMarked": "jobs/J18_WingRUnderHalo/input_marked.png",
+    "mask": "jobs/J18_WingRUnderHalo/mask.png",
+    "maskBW": "jobs/J18_WingRUnderHalo/mask_bw.png",
+    "context": "jobs/J18_WingRUnderHalo/context.png",
+    "preview": "jobs/J18_WingRUnderHalo/preview.png"
+   },
+   "refs": [],
+   "size": [
+    1536,
+    1024
+   ],
+   "aspect": "3:2",
+   "variants": [],
+   "returns": [
+    "returns/J18.png"
+   ],
+   "inContext": false,
+   "newLayers": [],
+   "targets": {
+    "WingR": [
+     "F22_WingR"
+    ]
+   },
+   "crop4k": [
+    933,
+    311,
+    1272,
+    537
+   ],
+   "scale4kToImage": 4.530973451327434
+  }
+ ]
+}
